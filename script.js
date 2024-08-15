@@ -22,9 +22,14 @@ adjustMapContainerHeight();
 // Adjust the height on window resize
 window.addEventListener('resize', adjustMapContainerHeight);
 
-// Lock scrolling
-document.body.style.overflow = 'hidden'; // Prevent scrolling through the body
-window.addEventListener('wheel', function(e) {
-    e.preventDefault(); // Prevent scrolling through the wheel event
-}, { passive: false });
+if (window.innerWidth > 768) {  // 768px is a common breakpoint for tablets
+    // Lock scrolling on computers and larger tablets
+    document.body.style.overflow = 'hidden'; // Prevent scrolling through the body
+    window.addEventListener('wheel', function(e) {
+        e.preventDefault(); // Prevent scrolling through the wheel event
+    }, { passive: false });
+} else {
+    // Allow scrolling on mobile devices
+    document.body.style.overflow = 'auto'; // Ensure scrolling is enabled on mobile
+}
   
