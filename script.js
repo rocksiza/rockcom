@@ -1,3 +1,19 @@
+
+function randomColor(){
+    const colors = [
+    "linear-gradient(to bottom, #270064, #0d1c6c, #002b70, #003770, #00426d, #00486b, #004d66, #005161, #005359, #005348, #00522f, #004f0e)",
+    "radial-gradient(circle, #3f0000, #3b000d, #360015, #2f001a, #28001e, #24001c, #20001a, #1c0018, #190012, #14000a, #0c0004, #000000)",
+    "linear-gradient(to left bottom, #3a5e4d, #325643, #2a4f39, #23472f, #1c4025, #22371a, #242f11, #252608, #261b06, #211308, #160a08, #000000)",
+    "linear-gradient(to left, #3a5e4d, #2d554b, #234c48, #1c4244, #17393f, #17313a, #192934, #19222c, #191a22, #161318, #0f0a0d, #000000)",
+    "linear-gradient(to right top, #000000, #20181f, #2e2d3f, #2b4660, #096379, #29788c, #418e9f, #58a5b3, #8bb9ce, #b9cee1, #e1e5f0, #ffffff)"
+];
+    var colorNum = Math.floor(Math.random() * 5);
+    $('body').css('background-image', colors[colorNum]);
+
+}
+
+randomColor();
+
 $("#start").click(function(){
     $("#start_sound").get(0).play();
     $("#start").hide();
@@ -58,12 +74,11 @@ function placeSVGImages(svgPaths) {
 }
 
 // Paths to SVG images
-const svgPaths = ['star (1).svg', 'star (2).svg', 'star (3).svg', 'star (4).svg', 'star (5).svg', 'star (6).svg', 'star (7).svg'];
+const svgPaths = ['images/star (1).svg', 'images/star (2).svg', 'images/star (3).svg', 'images/star (4).svg', 'images/star (5).svg', 'images/star (6).svg', 'images/star (7).svg'];
 
 // Place SVG images randomly on page load
-window.onload = () => {
-    placeSVGImages(svgPaths);
-    placeSVGImages(svgPaths);
-};
+
+placeSVGImages(svgPaths);
+placeSVGImages(svgPaths);
 
   

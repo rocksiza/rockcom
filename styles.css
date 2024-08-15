@@ -1,5 +1,5 @@
 body {
-  background-image: linear-gradient(to bottom, #270064, #0d1c6c, #002b70, #003770, #00426d, #00486b, #004d66, #005161, #005359, #005348, #00522f, #004f0e);
+  background-image: radial-gradient(circle, #441b1b, #43181f, #411524, #3e1329, #39132e, #34122b, #2e1128, #291025, #220d1c, #1c0913, #12040a, #000000);
 }
 
 img {
