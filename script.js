@@ -32,4 +32,38 @@ if (window.innerWidth > 768) {  // 768px is a common breakpoint for tablets
     // Allow scrolling on mobile devices
     document.body.style.overflow = 'auto'; // Ensure scrolling is enabled on mobile
 }
+
+function getRandomPosition(maxWidth, maxHeight) {
+    return {
+        x: Math.floor(Math.random() * maxWidth),
+        y: Math.floor(Math.random() * maxHeight)
+    };
+}
+
+function placeSVGImages(svgPaths) {
+    const body = document.body;
+    const maxWidth = body.clientWidth - 100; // Subtract the width of the image to prevent overflow
+    const maxHeight = body.clientHeight - 100; // Subtract the height of the image to prevent overflow
+
+    svgPaths.forEach(path => {
+        const img = document.createElement('img');
+        img.src = path;
+        img.style.width = '50px'; // Set fixed width
+        img.style.height = '50px'; // Set fixed height
+        const position = getRandomPosition(maxWidth, maxHeight);
+        img.style.left = `${position.x}px`;
+        img.style.top = `${position.y}px`;
+        body.appendChild(img);
+    });
+}
+
+// Paths to SVG images
+const svgPaths = ['star (1).svg', 'star (2).svg', 'star (3).svg', 'star (4).svg', 'star (5).svg', 'star (6).svg', 'star (7).svg'];
+
+// Place SVG images randomly on page load
+window.onload = () => {
+    placeSVGImages(svgPaths);
+    placeSVGImages(svgPaths);
+};
+
   

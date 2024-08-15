@@ -1,8 +1,10 @@
 body {
-  background: url(5006.png);
+  background-image: linear-gradient(to bottom, #270064, #0d1c6c, #002b70, #003770, #00426d, #00486b, #004d66, #005161, #005359, #005348, #00522f, #004f0e);
 }
 
-
+img {
+  position: absolute;
+}
 
 #top-cover,
 #bottom-cover {
@@ -93,6 +95,7 @@ body {
   opacity: 0.4;
   place-self: center;
   transition: transform 250ms, opacity 250ms;
+  position: relative;
 }
 
 .card:before {
