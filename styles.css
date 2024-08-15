@@ -156,3 +156,77 @@ body {
   width: 58.2vw; /* 514 / 1366 */
   height: 28.7vh; /* 214 / 768 */
 }
+
+
+@media only screen and (max-width: 768px) {
+  /* Styles specific to phones */
+
+  /* Hide the scrollbar but allow scrolling */
+  body {
+    overflow-y: scroll; /* Enable vertical scrolling */
+    -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+  }
+
+  body::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Chrome, Safari, and newer versions of Edge */
+  }
+
+  
+  #top-cover,
+  #bottom-cover {
+      position: fixed; /* Use fixed positioning to cover the whole viewport */
+      left: 0;
+      right: 0;
+      width: 106vw; /* Use viewport width to ensure full coverage */
+      height: 55vh; /* Each cover takes up half of the viewport height */
+      background-color: black;
+      overflow: hidden; /* Prevents scrolling within the covers */
+      transition: transform 0.5s ease-in-out; /* Smooth transition for the pull-apart effect */
+  }
+  
+  #top-cover {
+      z-index: 4; /* Ensure the top cover is above the bottom cover */
+      top: 0;
+  }
+  
+  
+  #bottom-cover {
+      z-index: 3; /* Bottom cover below the top cover */
+      bottom: 0;
+  }
+
+  #info {
+    top: 2vh; /* Top position for the new fourth container */
+    left: 8.3vw; /* Same left position */
+    width: 78.2vw; /* Same width */
+    height: 31.34vh; /* Adjusted height */
+    font-size: larger;
+    color: blanchedalmond;
+    text-align: center;
+  }
+
+  #cont1 {
+    top: 36.2vh; /* Adjusted top position for the third container */
+    left: 8.3vw; /* Same left position */
+    width: 78.2vw; /* Same width */
+    height: 31.34vh; /* Adjusted height */
+
+  }
+  
+  #cont2 {
+    top: 70.5vh; /* Adjusted top position for the second container */
+    left: 8.3vw; /* Same left position */
+    width: 78.2vw; /* Same width */
+    height: 31.34vh; /* Adjusted height */
+  }
+  
+  #cont3 {
+    top: 104.8vh; /* Adjusted top position for the first container */
+    left: 8.3vw; /* Same left position */
+    width: 78.2vw; /* Same width */
+    height: 31.34vh; /* 28.45vh scaled down to fit an additional container */
+
+  }
+  /* Adjust any other elements as needed for small screens */
+}
