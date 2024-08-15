@@ -67,7 +67,9 @@ body {
   opacity: 0.2;
   transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effects */
   transition: opacity 0.3s ease; /* Smooth transition for opacity */
-
+  font-size: larger;
+  color: blanchedalmond;
+  text-align: center;
 }
 
 .card:hover {
@@ -123,9 +125,6 @@ body {
   left: 7.2vw; /* 98 / 1366 */
   width: 19.7vw; /* 277 / 1366 */
   height: 88.9vh; /* 444 / 768 */
-  font-size: larger;
-  color: blanchedalmond;
-  text-align: center;
 }
 
 
@@ -143,6 +142,13 @@ body {
   height: 28.45vh; /* 214 / 768 */
 }
 
+#cont1 img {
+  max-width: 100px; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto 20px auto; 
+}
+
 #cont2 {
   top: 36.3vh; /* 274 / 768 */
   left: 28.3vw; /* 395 / 1366 */
@@ -150,11 +156,25 @@ body {
   height: 28.45vh; /* 214 / 768 */
 }
 
+#cont2 img {
+  max-width: 100px; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto 20px auto; 
+}
+
 #cont3 {
   top: 6.2vh; /* 47 / 768 */
   left: 28.3vw; /* 789 / 1366 */
   width: 58.2vw; /* 514 / 1366 */
   height: 28.7vh; /* 214 / 768 */
+}
+
+#cont3 img {
+  max-width: 100px; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto 20px auto; 
 }
 
 
@@ -165,6 +185,7 @@ body {
     -ms-overflow-style: none; /* Hide scrollbar in IE and Edge */
     scrollbar-width: none; /* Hide scrollbar in Firefox */
     touch-action: pan-y; /* Ensure the page can be scrolled vertically */
+    padding-bottom: 1000px; /* Adjust as needed */
   }
 
   body::-webkit-scrollbar {
@@ -209,7 +230,7 @@ body {
   }
 
   #cont1 {
-    top: 36.2vh;
+    top: 104.8vh;
   }
 
   #cont2 {
@@ -217,6 +238,6 @@ body {
   }
 
   #cont3 {
-    top: 104.8vh;
+  top: 36.2vh;
   }
 }
