@@ -18,26 +18,39 @@
     <div id="bottom-cover"></div>
     
 
-    <div id="welcome"> <img src="https://media.tenor.com/GPMqRbwdDFkAAAAi/sleepy-sleeping.gif">
-        You're too early, come back soon :)
-    </div>
+
 
     <audio id="start_sound" preload="auto">
         <source src="start.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
 
-<script>
 
-$("#start").click(function(){
-    $("#start_sound").get(0).play();
-    $("#start").hide();
-    var top_cover = document.getElementById('top-cover');
-    var bottom_cover = document.getElementById('bottom-cover');
-    top_cover.style.transform = 'translateY(-100%)';
-    bottom_cover.style.transform = 'translateY(100%)';
-})
+    <div class="cards" id="cards">
+        <div id="info" class="card">
+            <div class="the-content">
+            <img class="contentimg" src="https://media.tenor.com/GPMqRbwdDFkAAAAi/sleepy-sleeping.gif">
+            Hello! My name is Nikolas Carlson - a strange little man on a strange little adventure <br> <br> <br> You're still quite a bit early, bare with me please :)
+            </div>
+        </div>
 
-</script>
+        
+        <div id="cont1" class="card">
+            <div class="the-content">
+                guh guh
+            </div>
+        </div>
+        
+        <div id="cont2" class="card">
+            <div class="the-content">
+            </div>
+        </div>
+        
+        <div id="cont3" class="card">
+            <div class="the-content">
+            </div>
+        </div>
+    </div>
+<script src="script.js"> </script>
 </body>
 </html>

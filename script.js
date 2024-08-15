@@ -1,6 +1,15 @@
-// Function to adjust the height of the map-container based on its width
+$("#start").click(function(){
+    $("#start_sound").get(0).play();
+    $("#start").hide();
+    var top_cover = document.getElementById('top-cover');
+    var bottom_cover = document.getElementById('bottom-cover');
+    top_cover.style.transform = 'translateY(-100%)';
+    bottom_cover.style.transform = 'translateY(100%)';
+})
+
+
 function adjustMapContainerHeight() {
-    const mapContainer = document.getElementById('map-container');
+    const mapContainer = document.getElementById('cards');
     const aspectRatio = 768 / 1366; // Original aspect ratio
     const viewportWidth = window.innerWidth;
     const newHeight = viewportWidth * aspectRatio;
@@ -18,3 +27,4 @@ document.body.style.overflow = 'hidden'; // Prevent scrolling through the body
 window.addEventListener('wheel', function(e) {
     e.preventDefault(); // Prevent scrolling through the wheel event
 }, { passive: false });
+  
