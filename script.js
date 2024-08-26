@@ -40,7 +40,7 @@ function textBoxBigger(id){
 
 $(document).ready(function() {
     if ($(".card").hasClass("expanded")) {
-        // Reverse the animation to reset the card to its original state
+        console.log("uh huh")
         $(".card").css({
             "position": "",
             "top": "",
@@ -58,6 +58,8 @@ $(document).ready(function() {
             "color": "",
             "border-radius": ""
         });
+    } else {
+        console.log("nuh uh")
     }
 });
 
