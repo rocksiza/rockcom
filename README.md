@@ -7,3 +7,4 @@ TO:DO
 * Power button flash red or smth
 * actually create the content
   * will be done eventually
+??
