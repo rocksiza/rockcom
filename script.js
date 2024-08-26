@@ -38,7 +38,7 @@ function textBoxBigger(id){
 
 }
 
-function pleasework() {
+$(window).on("pageshow", function(event) {
     if ($(".card").hasClass("expanded")) {
         console.log("uh huh")
         $(".card").css({
@@ -61,7 +61,7 @@ function pleasework() {
     } else {
         console.log("nuh uh")
     }
-};
+});
 
 $("#cont3").click(function(){
     textBoxBigger("#cont3")
