@@ -26,7 +26,7 @@ function textBoxBigger(id){
         "transition": "all 0.5s ease-in-out"
         });
 
-    $(".card").addClass("fade-out");
+    $(".card").addClass("expanded fade-out"); // Add an "expanded" class
 
     $(".card img").css({"opacity": 0})
 
@@ -38,6 +38,28 @@ function textBoxBigger(id){
 
 }
 
+$(document).ready(function() {
+    if ($(".card").hasClass("expanded")) {
+        // Reverse the animation to reset the card to its original state
+        $(".card").css({
+            "position": "",
+            "top": "",
+            "left": "",
+            "width": "",
+            "height": "",
+            "z-index": "",
+            "transform": "",
+            "transition": "all 0.5s ease-in-out"
+        }).removeClass("expanded fade-out");
+
+        $(".card img").css({"opacity": 1});
+
+        $(".card").css({
+            "color": "",
+            "border-radius": ""
+        });
+    }
+});
 
 $("#cont3").click(function(){
     textBoxBigger("#cont3")
