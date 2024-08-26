@@ -14,13 +14,37 @@ function randomColor(){
 
 randomColor();
 
+function textBoxBigger(id){
+    $(id).css({
+        "position": "fixed",        // Make sure the element stays in place while expanding
+        "top": "0",                 // Align to the top
+        "left": "0",                // Align to the left
+        "width": "100vw",           // Full viewport width
+        "height": "100vh",          // Full viewport height
+        "z-index": 3,
+        "transform": "none",        // Reset any existing transformations
+        "transition": "all 0.5s ease-in-out"
+        });
+}
+
+
+$("#cont3").click(function(){
+    textBoxBigger("#cont3")
+})
+
+$("#cont2").click(function(){
+    textBoxBigger("#cont2")
+})
+
+$("#cont1").click(function(){
+    textBoxBigger("#cont1")
+})
+
 $("#start").click(function(){
     $("#start_sound").get(0).play();
     $("#start").hide();
-    var top_cover = document.getElementById('top-cover');
-    var bottom_cover = document.getElementById('bottom-cover');
-    top_cover.style.transform = 'translateY(-100%)';
-    bottom_cover.style.transform = 'translateY(100%)';
+    $("#top-cover").css('transform', 'translateY(-100%)')
+    $("#bottom-cover").css('transform', 'translateY(100%)');
 })
 
 
