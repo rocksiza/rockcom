@@ -100,6 +100,10 @@ img {
   position: relative;
 }
 
+.card.fade-out:before {
+  opacity: 0; /* Make the border fade out */
+}
+
 .card:before {
   background: linear-gradient(
     45deg,
@@ -133,7 +137,13 @@ img {
 }
 
 
-#info img {
+#cont1, #cont2, #cont3 {
+  left: 28.3vw; /* 395 / 1366 */
+  width: 58.2vw; /* 514 / 1366 */
+  height: 28.45vh;
+}
+
+#info img, #cont1 img, #cont2 img, #cont3 img {
   max-width: 100px; 
   height: auto; 
   display: block; 
@@ -142,45 +152,18 @@ img {
 
 #cont1 {
   top: 66.7vh; /* 504 / 768 */
-  left: 28.3vw; /* 395 / 1366 */
-  width: 58.2vw; /* 514 / 1366 */
-  height: 28.45vh; /* 214 / 768 */
 }
 
-#cont1 img {
-  max-width: 100px; 
-  height: auto; 
-  display: block; 
-  margin: 0 auto 20px auto; 
-}
 
 #cont2 {
   top: 36.3vh; /* 274 / 768 */
-  left: 28.3vw; /* 395 / 1366 */
-  width: 58.2vw; /* 514 / 1366 */
-  height: 28.45vh; /* 214 / 768 */
 }
 
-#cont2 img {
-  max-width: 100px; 
-  height: auto; 
-  display: block; 
-  margin: 0 auto 20px auto; 
-}
 
 #cont3 {
   top: 6.2vh; /* 47 / 768 */
-  left: 28.3vw; /* 789 / 1366 */
-  width: 58.2vw; /* 514 / 1366 */
-  height: 28.7vh; /* 214 / 768 */
 }
 
-#cont3 img {
-  max-width: 100px; 
-  height: auto; 
-  display: block; 
-  margin: 0 auto 20px auto; 
-}
 
 
 @media only screen and (max-width: 850px) {

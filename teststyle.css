@@ -1,0 +1,18 @@
+body {
+    background-color: rgb(25, 25, 25);
+}
+
+#test {
+    color: blanchedalmond;
+    position: absolute;
+    font-size: xx-large;
+    width: 100px;
+    height: 100px;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for opacity */
+}

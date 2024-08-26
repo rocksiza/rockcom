@@ -25,19 +25,39 @@ function textBoxBigger(id){
         "transform": "none",        // Reset any existing transformations
         "transition": "all 0.5s ease-in-out"
         });
+
+    $(".card").addClass("fade-out");
+
+    $(".card img").css({"opacity": 0})
+
+    $(".card").css({
+        "color": "rgb(255, 235, 205, 0)",
+        "border-radius": "0px"
+    })
+
+
 }
 
 
 $("#cont3").click(function(){
     textBoxBigger("#cont3")
+    setTimeout(function(){
+        window.location.href = "testpage.html";
+    }, 500);
 })
 
 $("#cont2").click(function(){
     textBoxBigger("#cont2")
+    setTimeout(function(){
+        window.location.href = "testpage.html";
+    }, 500);
 })
 
 $("#cont1").click(function(){
     textBoxBigger("#cont1")
+    setTimeout(function(){
+        window.location.href = "testpage.html";
+    }, 500);
 })
 
 $("#start").click(function(){
